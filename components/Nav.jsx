@@ -35,6 +35,10 @@ const Nav = () => {
       <div className='sm:flex hidden'>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
+            <Link href='/ai-improve' className='outline_btn'>
+              AI Prompt Enhancer
+            </Link>
+
             <Link href='/create-prompt' className='black_btn'>
               Create Post
             </Link>
@@ -55,6 +59,9 @@ const Nav = () => {
           </div>
         ) : (
           <div className='flex gap-3'>
+            <Link href='/ai-improve' className='outline_btn'>
+              AI Prompt Enhancer
+            </Link>
             <Link href='/auth/signin' className='black_btn'>
               Log In
             </Link>
@@ -94,6 +101,13 @@ const Nav = () => {
                 >
                   Create Prompt
                 </Link>
+                <Link
+                  href='/ai-improve'
+                  className='dropdown_link'
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  AI Prompt Enhancer
+                </Link>
                 <button
                   type='button'
                   onClick={() => {
@@ -109,6 +123,9 @@ const Nav = () => {
           </div>
         ) : (
           <div className='flex gap-2'>
+            <Link href='/ai-improve' className='outline_btn text-xs px-3'>
+              AI Prompt Enhancer
+            </Link>
             <Link href='/auth/signin' className='black_btn'>
               Log In
             </Link>
