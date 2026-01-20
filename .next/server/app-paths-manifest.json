@@ -1,11 +1,8 @@
 {
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/prompt/route": "app/api/prompt/route.js",
-  "/api/prompt/new/route": "app/api/prompt/new/route.js",
-  "/api/prompt/[id]/like/route": "app/api/prompt/[id]/like/route.js",
+  "/api/ai-improve/route": "app/api/ai-improve/route.js",
   "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js",
-  "/create-prompt/page": "app/create-prompt/page.js",
-  "/auth/signin/page": "app/auth/signin/page.js",
-  "/update-prompt/page": "app/update-prompt/page.js"
+  "/ai-improve/page": "app/ai-improve/page.js",
+  "/auth/signin/page": "app/auth/signin/page.js"
 }
